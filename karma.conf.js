@@ -20,8 +20,8 @@ module.exports = function(config) {
       './node_modules/angular-mocks/angular-mocks.js',
       './vendor/lodash.js',
       './app/app.js',
-      'app/controller/user.controller.js',
-      'app/controller/user.controller.Spec.js'
+      'app/controllers/user.controller.js',
+      'app/controllers/user.controller.Spec.js'
     ],
 
 

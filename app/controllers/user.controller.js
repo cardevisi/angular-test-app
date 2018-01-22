@@ -14,7 +14,8 @@ angular.module('app').controller('Users', ['$scope', function($scope) {
     };
 
     $scope.removeProperties = function(company, exclude){
+        if(!company) return;
         var exclude = exclude || [];
-        $scope.company = _.omit(company, [exclude]);
+        $scope.company = _.omit(company, exclude);
     };
 }]);

@@ -46,11 +46,6 @@ describe('Test group for User Controller', () => {
         it('should remove properties from company', () => {
             var $scope = $rootScope.$new();
             var controller = $controller('Users', { $scope: $scope });
-            $scope.company = {
-                'address' : 'Rua Afonso Vidal',
-                'phone' : '1190889-9090',
-                'number' : '1000'
-            };
             $scope.removeProperties();
             expect( $scope.company ).toEqual({
                 'address' : 'Rua Afonso Vidal',

@@ -1,3 +1,20 @@
 <div>
     <p>Hello</p>
+    <button ng-click="getList()">ATUALIZAR</button>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="data in list">
+            <th scope="row">{{data.entries.date}}</th>
+            <td ng-repeat="key in data.entries.taxes">{{key}}</td>
+          </tr>
+        </tbody>
+      </table>
 </div>

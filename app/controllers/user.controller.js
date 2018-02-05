@@ -13,6 +13,28 @@ angular.module('app').controller('Users', ['$scope', function($scope) {
         }
     };
 
+    $scope.getList = function() {
+        $scope.list = [{
+        'entries' : {
+            'date' :'04-02-2018',
+            'taxes' : [
+                10,
+                3.18,
+                4
+            ] 
+        }
+        },{
+            'entries' : {
+                'date' :'04-02-2018',
+                'taxes' : [
+                    10,
+                    3.18,
+                    4
+                ] 
+            }
+        }];
+    };
+
     $scope.removeProperties = function(company, exclude){
         if(!company) return;
         var exclude = exclude || [];

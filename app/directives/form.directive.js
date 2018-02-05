@@ -1,5 +1,6 @@
 angular.module('forms', []).directive('userForm', function() {
     var ddo = {};
-    ddo.templateUrl = './form.template.html';
+    ddo.controller = 'Users';
+    ddo.templateUrl = './directives/form.template.html';
     return ddo;
 })
